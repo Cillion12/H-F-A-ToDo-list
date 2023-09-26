@@ -77,11 +77,15 @@ function createElement(){
     
         let getMonth = date.getMonth();
     
-        let getDay = date.getDay();
+        // let getDay = date.getDay();
     
         let getDate = date.getDate();
+
+        let getHour = date.getHours();
+
+        let getMinutes = date.getMinutes();
     
-        displaydate.innerText = `${getYear} / ${getMonth + 1} / ${getDate} / ${getDay} `
+        displaydate.innerText = `${getYear} / ${getMonth + 1} / ${getDate} / ${getHour}: ${getMinutes}`
     
     }
     // Making sure that if a list isnt inputed, an alert is shown to the user to input text.
